@@ -1,11 +1,5 @@
-const constVar = 'constVar';
-console.log(constVar);
+const printMyName = (name) => {
+    console.log(name);
+}
 
-let letVar = 'letVar'
-console.log(letVar);
-
-var oldVar = 'var'
-console.log(oldVar);
-
-constVar = 'wrong';
-console.log(constVar);
+printMyName('leo');
