@@ -1,5 +1,8 @@
-const printMyName = (name) => {
-    console.log(name);
-}
+//import one function/const from a file
+import {smth} from './utility.js'
 
-printMyName('leo');
+//import one function/const as an alias
+import {smth as Smth} from './utility,js'
+
+//import all from a file/component
+import * as bundled from './utility.js'
