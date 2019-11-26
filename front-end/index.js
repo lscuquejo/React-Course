@@ -7,5 +7,5 @@ console.log(letVar);
 var oldVar = 'var'
 console.log(oldVar);
 
-// constVar = 'wrong';
+constVar = 'wrong';
 console.log(constVar);
