@@ -1,8 +1,29 @@
-//import one function/const from a file
-import {smth} from './utility.js'
+class Human {
+    constructor(){
+        this.gender = 'female';
+    }
 
-//import one function/const as an alias
-import {smth as Smth} from './utility,js'
+    printGender() {
+        console.log(this.gender);
+    }
+}
 
-//import all from a file/component
-import * as bundled from './utility.js'
+// const human = new Human();
+// human.printGender();
+
+//class structure
+class Person extends Human{
+    constructor(){
+        super();
+        this.name = 'Leonardo';
+        this.gender = 'male';
+    }
+
+    printMyName() {
+        console.log(this.name);
+    }
+}
+
+const person = new Person();
+person.printMyName();
+person.printGender();
