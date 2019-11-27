@@ -1,11 +1,8 @@
-const person = {
-    name: 'Max'
-};
+const numbers = [1, 2, 3];
 
-const secondPerson = {
-    ...person
-};
+const doubleNumArray = numbers.map((num) => {
+    return num * 2;
+});
 
-person.name = 'Manu';
-
-console.log(secondPerson);
+console.log(numbers);
+console.log(doubleNumArray)
