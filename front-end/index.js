@@ -1,21 +1,5 @@
-const numbers = [1, 2, 3];
-const newNumbers = [...numbers, 4];
+const numbers = [1, 2 , 3];
 
-console.log(newNumbers);
+[num1, num2] = numbers;
 
-const person = {
-    name: 'Leo'
-};
-
-const newPerson = {
-    ...person,
-    age: 28
-}
-
-console.log(newPerson);
-
-const filter = (...args) => {
-    return args.filter(element => element === 1);
-}
-
-console.log(filter(1,2,3));
+console.log(num1, num2);
