@@ -1,24 +1,21 @@
-class Human {
-    gender = 'female';
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4];
 
-    printGender = () => {
-        console.log(this.gender);
-    }
+console.log(newNumbers);
+
+const person = {
+    name: 'Leo'
+};
+
+const newPerson = {
+    ...person,
+    age: 28
 }
 
-// const human = new Human();
-// human.printGender();
+console.log(newPerson);
 
-//class structure
-class Person extends Human{
-    name = 'Leonardo';
-    gender = 'male';
-
-    printMyName = () => {
-        console.log(this.name);
-    }
+const filter = (...args) => {
+    return args.filter(element => element === 1);
 }
 
-const person = new Person();
-person.printMyName();
-person.printGender();
+console.log(filter(1,2,3));
