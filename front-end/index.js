@@ -1,5 +1,11 @@
-const numbers = [1, 2 , 3];
+const person = {
+    name: 'Max'
+};
 
-[num1, num2] = numbers;
+const secondPerson = {
+    ...person
+};
 
-console.log(num1, num2);
+person.name = 'Manu';
+
+console.log(secondPerson);
