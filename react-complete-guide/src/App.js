@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     switchNameHandler = () => {
-        console.log('Was clicked!');
+        console.log('Was clicked! boy');
     }
 
     render() {
